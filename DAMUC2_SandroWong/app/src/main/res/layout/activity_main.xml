@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#07518C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="362dp"
+        android:layout_height="33dp"
+        android:text="@string/textitulo"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/text_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/textnombre"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nombre"
+        app:layout_constraintStart_toEndOf="@+id/text_nombre"
+        app:layout_constraintTop_toTopOf="@+id/text_nombre" />
+
+    <TextView
+        android:id="@+id/text_Correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textcorreo"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/text_nombre" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/text_clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textclave"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text_Correo"
+        app:layout_constraintTop_toBottomOf="@+id/text_Correo" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/text_nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textnacimiento"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text_clave"
+        app:layout_constraintTop_toBottomOf="@+id/text_clave" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/text_carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/textcarrera"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text_nacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/text_nacimiento" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintStart_toStartOf="@+id/text_carrera"
+        app:layout_constraintTop_toBottomOf="@+id/text_carrera">
+
+        <RadioButton
+            android:id="@+id/button_IS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonIS"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/button_IA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonIA"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/button_IM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonIM"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/button_AM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonAM"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/textpregunta"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text_carrera"
+        app:layout_constraintTop_toBottomOf="@+id/text_carrera" />
+
+    <CheckBox
+        android:id="@+id/check_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-14dp"
+        android:text="@string/checkradio"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text_pregunta"
+        app:layout_constraintTop_toBottomOf="@+id/text_pregunta" />
+
+    <CheckBox
+        android:id="@+id/check_Amigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/checkamigo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/check_Internet"
+        app:layout_constraintStart_toEndOf="@+id/check_radio"
+        app:layout_constraintTop_toTopOf="@+id/check_radio" />
+
+    <CheckBox
+        android:id="@+id/check_Internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/checkinternet"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/check_radio"
+        app:layout_constraintStart_toStartOf="@+id/check_radio"
+        app:layout_constraintTop_toBottomOf="@+id/check_radio" />
+
+    <CheckBox
+        android:id="@+id/check_Publicidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/checkpublicidad"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/check_Amigo"
+        app:layout_constraintStart_toStartOf="@+id/check_Amigo"
+        app:layout_constraintTop_toBottomOf="@+id/check_Amigo" />
+
+    <Button
+        android:id="@+id/button_Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:backgroundTint="#FFEB3B"
+        android:drawableLeft="@drawable/baseline_fast_forward_24"
+        android:text="Enviar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/check_Publicidad"
+        app:layout_constraintStart_toStartOf="@+id/check_Internet"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

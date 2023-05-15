@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DAMUC2_SandroWong</string>
+    <string name="textnombre">Apellidos y Nombres:</string>
+    <string name="textcorreo">Correo electrónico:</string>
+    <string name="textclave">Clave:</string>
+    <string name="textnacimiento">Fecha de nacimiento:</string>
+    <string name="textcarrera">Carrera:</string>
+    <string name="textpregunta">¿Por qué medio se enteró de la convocatoria?</string>
+    <string name="buttonIS">Ingenieria de Sistemas</string>
+    <string name="buttonIA">Ingenieria Ambiental</string>
+    <string name="buttonIM">Ingenieria Mecánica</string>
+    <string name="buttonAM">Administración</string>
+    <string name="checkradio">Radio</string>
+    <string name="checkinternet">Internet</string>
+    <string name="checkamigo">Amigo</string>
+    <string name="checkpublicidad">Publicidad</string>
+    <string name="textitulo">Registro de Admisión UNTELS</string>
+</resources>
